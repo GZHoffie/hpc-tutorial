@@ -11,6 +11,7 @@ Resource Type | Serial Queue | CPU Queue | CPU128 Queue | FAT Queue | k20 / k40 
 :-------------|:------------:|:---------:|:------------:|:---------:|:-------------:|:--------------:
 Description | 1 core, 4GB | 16 cores, 64GB | 16 cores, 128GB | 16 cores, 256GB | 2 GPUs | 2 GPUs 
 Price | 1 | 16 | 24 | 32 | 20 | 40
+
 Price unit: points per node per hour.
 
 #### Storage
