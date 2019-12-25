@@ -21,21 +21,38 @@ Exceeding storage: pay **166** points / TB / month.
 #### Operating System 
 CentOS Linux release 7.3.1611 (Core) 
 
-Login to Cluster
+Login to Cluster with Linux/Unix/Mac
 ----------------
 1. SSH login node: 202.120.58.230 or 202.120.58.231.
 SSH Port: 22.
 
 ```bash
-$ ssh umjpw-2@202.120.58.230
+$ ssh umjpw-3@202.120.58.230
 ```
+
+And enter the password.
 
 2. Once succeeded, you can use ssh key authentication to login without a password.
 
 ```bash
 $ ssh-keygen -t rsa -f ~/.ssh/id_rsa_hpc
-$ ssh-copy-id -i ~/.ssh/id_rsa_hpc.pub umjpw-2@hpc
+$ ssh-copy-id -i ~/.ssh/id_rsa_hpc.pub umjpw-3@hpc
 ```
+
+You can let the passphrase be empty. Otherwise you may need to enter passphrase everytime you connect to hpc.
+
+3. You may add the following to ~/.ssh/config so that you can login simply with ``ssh hpc`` in the future.
+
+```
+Host hpc
+        HostName 202.120.58.230
+        User     umjpw-3
+```
+
+Login to Cluster with Windows
+----------------
+1. Download WinSCP from ``https://winscp.net/eng/index.php``. Install and keep everything in default settings.
+
 
 Environments
 ------------
