@@ -38,7 +38,7 @@ And enter the password.
 
 ```bash
 $ ssh-keygen -t rsa -f ~/.ssh/id_rsa_hpc
-$ ssh-copy-id -i ~/.ssh/id_rsa_hpc.pub umjpw-3@hpc
+$ ssh-copy-id -i ~/.ssh/id_rsa_hpc.pub umjpw-3@202.120.58.230
 ```
 
 You can let the passphrase be empty. Otherwise you may need to enter passphrase everytime you connect to hpc.
