@@ -23,6 +23,8 @@ CentOS Linux release 7.3.1611 (Core)
 
 Login to Cluster with Linux/Unix/Mac
 ----------------
+0. Get an SJTU VPN, following the instruction from ``http://net.sjtu.edu.cn/wlfw/VPN.htm``. Connect to SJTU VPN.
+
 1. SSH login node: 202.120.58.230 or 202.120.58.231.
 SSH Port: 22.
 
@@ -49,9 +51,26 @@ Host hpc
         User     umjpw-3
 ```
 
+4. You can then upload files using the following
+
+```bash
+$ # if you want to copy directories
+$ scp -r SOURCE_DIR/ hpc:TARGET_DIR_NAME/
+$ # if you want to copy files
+$ scp SOURCE_FILE hpc:TARGET_DIR_NAME/TARGET_FILE_NAME
+```
+
 Login to Cluster with Windows
 ----------------
-1. Download WinSCP from ``https://winscp.net/eng/index.php``. Install and keep everything in default settings.
+0. Get an SJTU VPN, following the instruction from ``http://net.sjtu.edu.cn/wlfw/VPN.htm``. Connect to SJTU VPN.
+
+1. Download PuTTY from ``putty.org``.
+
+2. Open PuTTY, fill in the Host Name as ``202.120.58.230``, and press ``Open``. 
+
+3. A terminal will appear and prompt you with ``login as:``, and you will need to enter ``umjpw-3``. Then enter the password.
+
+4. To transfer files, download WinSCP from ``https://winscp.net/eng/index.php``. Install and keep everything in default settings. Enter Host Name, password accordingly. You can then transfer files by simply dragging your files to the target directory.
 
 
 Environments
