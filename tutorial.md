@@ -1,7 +1,7 @@
 Usages of the HPC Cluster
 =========================
 [Link to github](https://)
-[Documents for SJTU Pi Supercomputer](https://pi.sjtu.edu.cn/doc/)
+[Documents for SJTU Pi Supercomputer](https://docs.hpc.sjtu.edu.cn/)
 
 Resources
 ---------
@@ -25,11 +25,11 @@ Login to Cluster with Linux/Unix/Mac
 ----------------
 0. Get an SJTU VPN, following the instruction from ``http://net.sjtu.edu.cn/wlfw/VPN.htm``. Connect to SJTU VPN.
 
-1. SSH login node: 202.120.58.230 or 202.120.58.231.
+1. SSH login node: 202.120.58.241 or 202.120.58.242 or 202.120.58.243.
 SSH Port: 22.
 
 ```bash
-$ ssh umjpw-3@202.120.58.230
+$ ssh umjpw-3@202.120.58.241
 ```
 
 And enter the password.
@@ -38,7 +38,7 @@ And enter the password.
 
 ```bash
 $ ssh-keygen -t rsa -f ~/.ssh/id_rsa_hpc
-$ ssh-copy-id -i ~/.ssh/id_rsa_hpc.pub umjpw-3@202.120.58.230
+$ ssh-copy-id -i ~/.ssh/id_rsa_hpc.pub umjpw-3@202.120.58.241
 ```
 
 You can let the passphrase be empty. Otherwise you may need to enter passphrase everytime you connect to hpc.
@@ -47,7 +47,7 @@ You can let the passphrase be empty. Otherwise you may need to enter passphrase 
 
 ```
 Host hpc
-        HostName 202.120.58.230
+        HostName 202.120.58.241
         User     umjpw-3
 ```
 
@@ -66,7 +66,7 @@ Login to Cluster with Windows
 
 1. Download PuTTY from ``putty.org``.
 
-2. Open PuTTY, fill in the Host Name as ``202.120.58.230``, and press ``Open``. 
+2. Open PuTTY, fill in the Host Name as ``202.120.58.241``, and press ``Open``. 
 
 3. A terminal will appear and prompt you with ``login as:``, and you will need to enter ``umjpw-3``. Then enter the password.
 
