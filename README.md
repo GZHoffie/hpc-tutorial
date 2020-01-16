@@ -76,6 +76,24 @@ Login to Cluster with Windows
 Environments
 ------------
 
+#### Python Virtual Environment
+To install packages for python, you will need to create a virtual environment using the following steps:
+
+1. Create a virtual environment of python3 using
+
+```bash
+$ python3 -m venv NAME_OF_ENVIRONMENT
+```
+
+2. Activate the virtual environment using
+
+```bash
+$ source NAME_OF_ENVIRONMENT/bin/activate
+```
+You will then see the shell's prompt changing to the name of currently used virtual environment, ``(NAME_OF_ENVIRONMENT) [umjpw-3@login1 ~]$ ``.
+
+3. Now, you may install packages using ``pip`` and run your python code using ``python YOUR_CODE.py``.
+
 #### Python
 1. HPC provides different environment modules.
 We load ``miniconda3`` here.
